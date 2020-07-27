@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      LOGIN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input placeholder="nome@email.com"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha</ion-label>
+    <ion-input placeholder="******"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Manter logado</ion-label>
+    <ion-checkbox slot="start" color="tertiary"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-button slot="start" color="success">
+      Entrar
+    </ion-button>
+    <ion-button slot="end" color="danger" routerLink="/tab2">
+      Cadastrar
+    </ion-button>
+  </ion-item>
+
+</ion-content>

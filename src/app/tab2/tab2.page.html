@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      CADASTRO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label>Nome Completo</ion-label>
+        <ion-input placeholder="Nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>CPF</ion-label>
+          <ion-input placeholder="CPF"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Data de nascimento</ion-label>
+            <ion-datetime></ion-datetime>
+          </ion-item>
+
+        <ion-item>
+            <ion-list>
+                <ion-radio-group value="biff">
+                  <ion-list-header>
+                    <ion-label>Gênero</ion-label>
+                  </ion-list-header>
+              
+                  <ion-item>
+                    <ion-label>Feminino</ion-label>
+                    <ion-radio slot="start" value="feminino" color="tertiary"></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Masculino</ion-label>
+                    <ion-radio slot="start" value="masculino" color="tertiary"></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Outros</ion-label>
+                    <ion-radio slot="start" value="outros" color="tertiary"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+              </ion-list>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Celular</ion-label>
+            <ion-input placeholder="(xx) XXXXX-XXXX"></ion-input>
+          </ion-item>
+  
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input placeholder="nome@email.com"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha</ion-label>
+    <ion-input placeholder="******"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Confirmar senha</ion-label>
+    <ion-input placeholder="******"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-button slot="start" color="success">
+      Salvar
+    </ion-button>
+    <ion-button slot="end" color="warning">
+      Voltar
+    </ion-button>
+  </ion-item>
+
+</ion-content>
